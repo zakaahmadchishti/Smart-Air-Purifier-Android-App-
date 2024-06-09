@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "688819513730",
+    "firebase_url": "https://monitor-environment.firebaseio.com",
+    "project_id": "monitor-environment",
+    "storage_bucket": "monitor-environment.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:688819513730:android:8d03c0fa491aa2cc2e079b",
+        "android_client_info": {
+          "package_name": "com.example.greenpakistan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "688819513730-a4h22tlb7o31gku6vueeih7l6r1bri6k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuCg5ZmsGg5RdgwZxYibuLLaSNkw4v_xU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "688819513730-a4h22tlb7o31gku6vueeih7l6r1bri6k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

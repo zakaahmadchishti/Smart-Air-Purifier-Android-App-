@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="453dp"
+                android:layout_height="551dp">
+
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="528dp"
+                    android:layout_height="695dp"
+                    android:background="@drawable/group_16"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.75"
+                    app:layout_constraintStart_toStartOf="parent"
+
+
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.375" />
+
+
+                <View
+                    android:id="@+id/view16"
+                    android:layout_width="426dp"
+                    android:layout_height="211dp"
+                    android:background="@drawable/screenshot_20200801_191259_breezometer"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+
+
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <ProgressBar
+                    android:id="@+id/pbback"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="281dp"
+                    android:layout_height="464dp"
+                    android:indeterminate="false"
+                    android:max="160"
+                    android:progress="125"
+                    android:progressDrawable="@drawable/circleback"
+                    android:secondaryProgress="0"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.425"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+
+                    app:layout_constraintVertical_bias="0.158"
+                    tools:ignore="MissingConstraints" />
+
+                <ProgressBar
+                    android:id="@+id/pb"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="281dp"
+                    android:layout_height="464dp"
+
+                    android:indeterminate="false"
+                    android:max="160"
+                    android:progress="110"
+                    android:progressDrawable="@drawable/circle"
+                    android:secondaryProgress="0"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.425"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+
+                    app:layout_constraintVertical_bias="0.158"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/percentage"
+                    android:layout_width="113dp"
+                    android:layout_height="74dp"
+                    android:text="75%"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+                    app:layout_constraintBottom_toBottomOf="@+id/pb"
+                    app:layout_constraintEnd_toEndOf="@+id/pb"
+                    app:layout_constraintHorizontal_bias="0.577"
+                    app:layout_constraintStart_toStartOf="@+id/pb"
+                    app:layout_constraintTop_toTopOf="@+id/pb"
+                    app:layout_constraintVertical_bias="0.443" />
+
+                <TextView
+                    android:id="@+id/comment"
+                    style="@style/Widget.AppCompat.TextView.SpinnerItem"
+                    android:layout_width="123dp"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="5dp"
+                    android:text="GOOD"
+
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    app:layout_constraintBottom_toBottomOf="@+id/pbback"
+                    app:layout_constraintEnd_toEndOf="@+id/pbback"
+                    app:layout_constraintHorizontal_bias="0.645"
+                    app:layout_constraintStart_toStartOf="@+id/pbback"
+                    app:layout_constraintTop_toBottomOf="@+id/percentage"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    style="@style/Widget.AppCompat.TextView.SpinnerItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Processing"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+
+                    android:textColor="#CCC"
+                    app:layout_constraintBottom_toBottomOf="@+id/pbback"
+                    app:layout_constraintEnd_toEndOf="@+id/pbback"
+                    app:layout_constraintHorizontal_bias="0.53"
+                    app:layout_constraintStart_toStartOf="@+id/pbback"
+                    app:layout_constraintTop_toBottomOf="@+id/percentage"
+                    app:layout_constraintVertical_bias="0.202" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    style="@style/Widget.AppCompat.TextView.SpinnerItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Usually at this time:"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+
+                    android:textColor="#CCC"
+                    app:layout_constraintBottom_toBottomOf="@+id/pbback"
+                    app:layout_constraintEnd_toEndOf="@+id/pbback"
+                    app:layout_constraintHorizontal_bias="0.53"
+                    app:layout_constraintStart_toStartOf="@+id/pbback"
+                    app:layout_constraintTop_toBottomOf="@+id/percentage"
+                    app:layout_constraintVertical_bias="0.362" />
+
+                <TextView
+                    android:id="@+id/Condition_comment"
+                    style="@style/Widget.AppCompat.TextView.SpinnerItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Moderate 45"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+
+                    app:layout_constraintBottom_toBottomOf="@+id/pbback"
+                    app:layout_constraintEnd_toEndOf="@+id/pbback"
+                    app:layout_constraintHorizontal_bias="0.528"
+                    app:layout_constraintStart_toStartOf="@+id/pbback"
+                    app:layout_constraintTop_toBottomOf="@+id/percentage"
+                    app:layout_constraintVertical_bias="0.461" />
+
+                <Button
+                    android:id="@+id/Sign_in"
+                    android:layout_width="30dp"
+                    android:layout_height="29dp"
+                    android:layout_marginStart="72dp"
+                    android:layout_marginLeft="72dp"
+
+                    android:background="@drawable/icon_store"
+                    app:layout_constraintBottom_toTopOf="@+id/percentage"
+                    app:layout_constraintStart_toStartOf="@+id/pbback"
+                    app:layout_constraintTop_toTopOf="@+id/pbback"
+                    app:layout_constraintVertical_bias="0.347" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animationView"
+                    android:layout_width="457dp"
+                    android:layout_height="422dp"
+
+                    android:layout_marginTop="128dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:lottie_autoPlay="true"
+                    app:lottie_fileName="birds_all.json"
+                    app:lottie_loop="true">
+
+                </com.airbnb.lottie.LottieAnimationView>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="244dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/group_131"
+
+                    android:orientation="horizontal"
+                    android:baselineAligned="false">
+
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/Air_Quality"
+                            android:layout_width="151dp"
+                            android:layout_height="191dp"
+                            android:layout_marginStart="44dp"
+                            android:layout_marginLeft="44dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.446" />
+
+                        <Button
+                            android:id="@+id/My_Exposure"
+                            android:layout_width="148dp"
+                            android:layout_height="186dp"
+                            android:layout_marginStart="28dp"
+                            android:layout_marginLeft="28dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/Air_Quality"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.424" />
+
+                        <Button
+                            android:id="@+id/Humudity"
+                            android:layout_width="147dp"
+                            android:layout_height="193dp"
+
+                            android:layout_marginStart="32dp"
+                            android:layout_marginLeft="32dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/My_Exposure"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.434" />
+
+                        <Button
+                            android:id="@+id/Carbon"
+                            android:layout_width="141dp"
+                            android:layout_height="184dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginLeft="32dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/Humudity"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <Button
+                            android:id="@+id/Temperature"
+                            android:layout_width="145dp"
+                            android:layout_height="186dp"
+                            android:layout_marginStart="38dp"
+                            android:layout_marginLeft="38dp"
+                            android:background="@android:color/transparent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/Carbon"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <Button
+                            android:id="@+id/Sound"
+                            android:layout_width="152dp"
+                            android:layout_height="182dp"
+                            android:layout_marginStart="28dp"
+                            android:layout_marginLeft="28dp"
+                            android:background="@android:color/transparent"
+
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/Temperature"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.446" />
+
+                        <Button
+                            android:id="@+id/Alcholic"
+                            android:layout_width="162dp"
+                            android:layout_height="182dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@android:color/transparent"
+
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/Sound"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.446" />
+
+                        <Button
+                            android:id="@+id/Weather"
+                            android:layout_width="147dp"
+                            android:layout_height="184dp"
+                            android:layout_marginStart="28dp"
+                            android:layout_marginLeft="28dp"
+                            android:background="@android:color/transparent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/Alcholic"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.415" />
+
+                        <Button
+                            android:id="@+id/Pollen"
+                            android:layout_width="150dp"
+                            android:layout_height="184dp"
+                            android:layout_marginStart="23dp"
+                            android:layout_marginLeft="23dp"
+                            android:background="@android:color/transparent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/Weather"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

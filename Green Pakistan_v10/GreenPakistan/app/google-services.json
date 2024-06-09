@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1076839763263",
+    "firebase_url": "https://green-pakistan-ccab5.firebaseio.com",
+    "project_id": "green-pakistan-ccab5",
+    "storage_bucket": "green-pakistan-ccab5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1076839763263:android:a0cf6f465aa262d543178a",
+        "android_client_info": {
+          "package_name": "com.example.greenpakistan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1076839763263-vu4jahp77oodh9ktenhiu9co4vt2gjml.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDI0PuAxXsQfinanzE3bBHk4i3Yvj3YJ1E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1076839763263-vu4jahp77oodh9ktenhiu9co4vt2gjml.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
